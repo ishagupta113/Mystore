@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to MyStore</title>
+  <title>Welcome to MyStore Bakery</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBSHWHQEBW"></script>
@@ -16,11 +16,11 @@
 
   <style>
     :root {
-      --bg: #f4f6f8;
-      --primary: #2d89ef;
+      --bg: #fffaf5;
+      --primary: #d86b65;
       --card: #ffffff;
-      --text: #333;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      --text: #4b2e2e;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       --radius: 16px;
     }
 
@@ -46,8 +46,13 @@
       font-size: 2.5rem;
     }
 
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
@@ -65,88 +70,75 @@
       color: var(--primary);
     }
 
-    ul {
-      padding-left: 1.2rem;
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
     }
 
-    img {
-      max-width: 100%;
+    .menu-item {
+      background-color: #fff3f0;
+      padding: 1rem;
       border-radius: 12px;
-      border: 1px solid #ccc;
-      margin-top: 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
     }
 
-    code {
-      background: #e7edf3;
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-size: 0.95em;
+    .menu-item h3 {
+      margin: 0.5rem 0;
     }
+
+    .menu-item img {
+      max-width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to MyStore</h1>
-    <p>Your GA4 Traffic & Engagement Tracking Demo</p>
+    <h1>Welcome to MyStore Bakery</h1>
+    <p>Fresh Bakes. Sweet Moments. Real Tracking via GA4 🍪</p>
   </header>
 
   <div class="container">
 
     <div class="card">
-      <h2>📸 Real-Time Overview</h2>
-      <p><strong>Paste Screenshot Below:</strong></p>
-      <img src="real-time.png" alt="Real-Time Screenshot" />
+      <h2>🍰 Today’s Special Menu</h2>
+      <div class="menu">
+        <div class="menu-item">
+          <img src="https://source.unsplash.com/400x300/?cupcake" alt="Cupcake" />
+          <h3>Vanilla Cupcake</h3>
+          <p>Soft, fluffy & topped with buttercream!</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://source.unsplash.com/400x300/?croissant" alt="Croissant" />
+          <h3>Classic Croissant</h3>
+          <p>Buttery layers with a golden crunch 🥐</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://source.unsplash.com/400x300/?cookies" alt="Cookies" />
+          <h3>Choco Chip Cookies</h3>
+          <p>Crunch outside, gooey inside 🍫</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://source.unsplash.com/400x300/?cheesecake" alt="Cheesecake" />
+          <h3>Berry Cheesecake</h3>
+          <p>Fresh berries, creamy delight</p>
+        </div>
+      </div>
     </div>
 
     <div class="card">
-      <h2>📊 User Acquisition Report</h2>
+      <h2>🎉 Why People Love Us</h2>
       <ul>
-        <li><strong>Total Users:</strong> _____</li>
-        <li><strong>New Users:</strong> _____</li>
-        <li><strong>Returning Users:</strong> _____</li>
-      </ul>
-      <img src="user-acquisition.png" alt="User Acquisition" />
-    </div>
-
-    <div class="card">
-      <h2>🌐 Traffic Acquisition Report</h2>
-      <ul>
-        <li><strong>Top Sources:</strong> _____</li>
-        <li><strong>Source / Medium:</strong></li>
-        <ul>
-          <li>google / organic</li>
-          <li>direct / none</li>
-          <li>referral / site.com</li>
-        </ul>
-      </ul>
-      <img src="traffic-acquisition.png" alt="Traffic Sources" />
-    </div>
-
-    <div class="card">
-      <h2>⏱️ Engagement Overview</h2>
-      <ul>
-        <li><strong>Average Engagement Time:</strong> _____</li>
-        <li><strong>Pages per Session:</strong> _____</li>
-        <li><strong>Top Pages:</strong></li>
-        <ul>
-          <li>Page 1</li>
-          <li>Page 2</li>
-          <li>Page 3</li>
-        </ul>
-      </ul>
-      <img src="engagement-overview.png" alt="Engagement Screenshot" />
-    </div>
-
-    <div class="card">
-      <h2>💡 Reflections</h2>
-      <p><strong>1. Source with most traffic:</strong><br>_____</p>
-      <p><strong>2. Difference between new & returning users:</strong><br>_____</p>
-      <p><strong>3. Pages with highest engagement:</strong><br>_____</p>
-      <p><strong>4. Two suggestions to improve acquisition:</strong></p>
-      <ul>
-        <li>Suggestion 1</li>
-        <li>Suggestion 2</li>
+        <li>Freshly baked daily</li>
+        <li>100% natural ingredients</li>
+        <li>Free delivery within 5km</li>
+        <li>Now tracking your visits (for insights only 😉)</li>
       </ul>
     </div>
 
