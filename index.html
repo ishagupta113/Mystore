@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to MyStore</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBSHWHQEBW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BBSHWHQEBW');
+  </script>
+
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --primary: #2d89ef;
+      --card: #ffffff;
+      --text: #333;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      --radius: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+    }
+
+    code {
+      background: #e7edf3;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to MyStore</h1>
+    <p>Your GA4 Traffic & Engagement Tracking Demo</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>📸 Real-Time Overview</h2>
+      <p><strong>Paste Screenshot Below:</strong></p>
+      <img src="real-time.png" alt="Real-Time Screenshot" />
+    </div>
+
+    <div class="card">
+      <h2>📊 User Acquisition Report</h2>
+      <ul>
+        <li><strong>Total Users:</strong> _____</li>
+        <li><strong>New Users:</strong> _____</li>
+        <li><strong>Returning Users:</strong> _____</li>
+      </ul>
+      <img src="user-acquisition.png" alt="User Acquisition" />
+    </div>
+
+    <div class="card">
+      <h2>🌐 Traffic Acquisition Report</h2>
+      <ul>
+        <li><strong>Top Sources:</strong> _____</li>
+        <li><strong>Source / Medium:</strong></li>
+        <ul>
+          <li>google / organic</li>
+          <li>direct / none</li>
+          <li>referral / site.com</li>
+        </ul>
+      </ul>
+      <img src="traffic-acquisition.png" alt="Traffic Sources" />
+    </div>
+
+    <div class="card">
+      <h2>⏱️ Engagement Overview</h2>
+      <ul>
+        <li><strong>Average Engagement Time:</strong> _____</li>
+        <li><strong>Pages per Session:</strong> _____</li>
+        <li><strong>Top Pages:</strong></li>
+        <ul>
+          <li>Page 1</li>
+          <li>Page 2</li>
+          <li>Page 3</li>
+        </ul>
+      </ul>
+      <img src="engagement-overview.png" alt="Engagement Screenshot" />
+    </div>
+
+    <div class="card">
+      <h2>💡 Reflections</h2>
+      <p><strong>1. Source with most traffic:</strong><br>_____</p>
+      <p><strong>2. Difference between new & returning users:</strong><br>_____</p>
+      <p><strong>3. Pages with highest engagement:</strong><br>_____</p>
+      <p><strong>4. Two suggestions to improve acquisition:</strong></p>
+      <ul>
+        <li>Suggestion 1</li>
+        <li>Suggestion 2</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
